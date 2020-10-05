@@ -26,6 +26,6 @@ public class ClientView extends SimpleChatFrame {
     @Override
     public void simpleChatFramePaint(Graphics g) {
         g.setColor(Color.gray);
-        g.drawLine(0, 205, getWidth(), 205);
+        g.drawLine(0, 215, getWidth(), 215);
     }
 }
