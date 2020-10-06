@@ -20,12 +20,24 @@ public class ClientView extends SimpleChatFrame {
 
     @Override
     public void initModule() {
-        this.setVisible(true);
     }
 
     @Override
     public void simpleChatFramePaint(Graphics g) {
-        g.setColor(Color.gray);
-        g.drawLine(0, 215, getWidth(), 215);
+        // 设置画笔颜色
+        g.setColor(SimpleChatConstant.PARTING_LINE_COLOR);
+        // 右分隔线
+        g.drawLine(SimpleChatConstant.CLIENTVIEW_WIDTH/4*3, 0,
+                SimpleChatConstant.CLIENTVIEW_WIDTH/4*3,
+                SimpleChatConstant.CLIENTVIEW_HEIGHT);
+        // 下分隔线
+        g.drawLine(0,  SimpleChatConstant.CLIENTVIEW_HEIGHT/6*4,
+                SimpleChatConstant.CLIENTVIEW_WIDTH/4*3,
+                SimpleChatConstant.CLIENTVIEW_HEIGHT/6*4);
+
+    }
+
+    public static void main(String[] args) {
+        ClientView clientView = new ClientView();
     }
 }
