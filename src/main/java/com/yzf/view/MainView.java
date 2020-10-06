@@ -119,7 +119,7 @@ public class MainView extends SimpleChatFrame {
             public void actionPerformed(ActionEvent e) {
                 System.out.println("按钮[CLIENT]被点击");
                 // 开启 ClientView
-                new ClientView();
+                new ClientInfoView();
                 MainView.this.dispose();
             }
         });
