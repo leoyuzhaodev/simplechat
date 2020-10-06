@@ -14,6 +14,7 @@ public interface SimpleChatConstant {
 
     // 面板背景颜色
     Color PANEL_BACKGROUND_COLOR = new Color(255, 255, 255);
+    Color PARTING_LINE_COLOR = new Color(235, 235, 235);
 
     // 主窗口的屏幕：高，宽，名称
     int MAINVIEW_HEIGHT = 350;
@@ -24,4 +25,9 @@ public interface SimpleChatConstant {
     int CLIENTVIEW_HEIGHT = 700;
     int CLIENTVIEW_WIDTH = 1000;
     String CLIENTVIEW_NAME = "<SimpleChat-ClientView>";
+
+    // ClientInfo窗口的屏幕：高，宽，名称
+    int CLIENTINFOVIEW_HEIGHT = 400;
+    int CLIENTINFOVIEW_WIDTH = 500;
+    String CLIENTINFOVIEW_NAME = "<SimpleChat-ClientInfoView>";
 }
