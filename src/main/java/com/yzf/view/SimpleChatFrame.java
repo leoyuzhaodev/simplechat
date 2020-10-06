@@ -2,6 +2,7 @@ package com.yzf.view;
 
 import com.yzf.util.ScreenUtils;
 import com.yzf.util.SimpleChatConstant;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -14,9 +15,11 @@ import java.awt.event.WindowEvent;
  */
 public abstract class SimpleChatFrame extends JFrame {
 
-    public final JPanel contentPanel = new JPanel(){
+    public final JPanel contentPanel = new JPanel() {
         @Override
         public void paint(Graphics g) {
+            super.paint(g);
+            // 注意代码位置
             SimpleChatFrame.this.simpleChatFramePaint(g);
         }
     };
